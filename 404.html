@@ -29,9 +29,12 @@
 
         // Call this whenever information about your visitors becomes available
         // Please use Strings, Numbers, or Bools for value types.
+    var numbersArray = ['1','2','3','4','5,'6','7','8','9']
+    var userNumber = numbersArray[Math.floor(Math.random()*numbersArray.length)];
+
         pendo.initialize({
             visitor: {
-                id:              'test_user_1432'   // Required if user is logged in
+                id:              'test_user' + userNumber   // Required if user is logged in
                 // email:        // Recommended if using Pendo Feedback, or NPS Email
                 // full_name:    // Recommended if using Pendo Feedback
                 // role:         // Optional
